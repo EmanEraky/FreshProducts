@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_home"
+        android:id="@+id/homeFragment"
+        app:showAsAction="never"
+        android:title="@string/home">
+    </item>
+    <item
+        android:icon="@drawable/ic_store"
+        android:id="@+id/fragment_market"
+        app:showAsAction="never"
+        android:title="@string/market">
+    </item>
+    <item
+        android:icon="@drawable/ic_order"
+        android:id="@+id/fragment_orders"
+        app:showAsAction="never"
+        android:title="@string/order">
+    </item>
+
+    <item
+        android:icon="@drawable/ic_email"
+        android:id="@+id/fragment_chat"
+        app:showAsAction="never"
+        android:title="@string/chat">
+    </item>
+</menu>
