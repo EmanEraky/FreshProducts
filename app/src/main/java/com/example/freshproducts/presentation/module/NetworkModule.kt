@@ -1,19 +1,12 @@
 package com.example.freshproducts.presentation.module
 
-import android.content.Context
-import androidx.room.Room
 import com.example.freshproducts.BuildConfig
 import com.example.freshproducts.data.api.ApiService
-import com.example.freshproducts.data.repo.ApiFreshOffRepo
 import com.example.freshproducts.data.repo.ApiFreshRepo
 import com.example.freshproducts.data.repo.ApiHelper
-import com.example.freshproducts.data.repo.ApiOffHelper
-import com.example.freshproducts.db.dao.FreshDao
-import com.example.freshproducts.db.database.AppDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
