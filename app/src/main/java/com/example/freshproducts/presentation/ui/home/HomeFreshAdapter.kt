@@ -41,7 +41,17 @@ class HomeFreshAdapter(
             }
             listener.onClickHeart(freshProducts[position])
         }
+
         holder.binding.freshApi = freshProducts[position]
+    }
+
+
+    override fun getItemId(position: Int): Long {
+        return super.getItemId(position)
+    }
+
+    override fun getItemViewType(position: Int): Int {
+        return super.getItemViewType(position)
     }
 
     class DataViewHolder(val binding: ItemFreshBinding) : RecyclerView.ViewHolder(binding.root)
