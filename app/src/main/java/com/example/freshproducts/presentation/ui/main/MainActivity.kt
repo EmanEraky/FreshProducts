@@ -34,17 +34,4 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-//    fun changeLangApp() {
-//        val locale = Locale("ar")
-//        Locale.setDefault(locale)
-//        val config = Configuration()
-//        config.locale = locale
-//        baseContext.resources.updateConfiguration(
-//            config,
-//            baseContext.resources.displayMetrics
-//        )
-//        val refresh = Intent(this, MainActivity::class.java)
-//        finish()
-//        startActivity(refresh)
-//    }
 }

@@ -13,7 +13,6 @@ import com.example.freshproducts.presentation.listeners.ListenerFresh
 import com.example.freshproducts.utils.Status
 import dagger.hilt.android.AndroidEntryPoint
 import java.util.ArrayList
-import java.util.stream.Collectors.toSet
 
 
 @AndroidEntryPoint
@@ -29,7 +28,6 @@ class HomeFragment : Fragment(), ListenerFresh {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
-        list = ArrayList()
         adapter = HomeFreshAdapter(arrayListOf(), this )
         binding.mainAdapter = adapter
 

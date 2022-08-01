@@ -34,12 +34,12 @@ class HomeFreshAdapter(
             holder.binding.imgHeart.setImageResource(R.drawable.unheart)
         }
         holder.binding.imgHeart.setOnClickListener {
-            listener.onClickHeart(freshProducts[position])
             if(freshProducts[position].favorite){
                 holder.binding.imgHeart.setImageResource(R.drawable.unheart)
             }else{
                 holder.binding.imgHeart.setImageResource(R.drawable.heart)
             }
+            listener.onClickHeart(freshProducts[position])
         }
         holder.binding.freshApi = freshProducts[position]
     }
